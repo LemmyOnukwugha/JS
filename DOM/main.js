@@ -39,14 +39,35 @@
 // console.log("red paragraph ===>", redParagraph)
 
 // Transversing the DOM
-const item = document.querySelector(".items")
+// const item = document.querySelector(".items")
 
-const parent = item.parentElement
+// const parent = item.parentElement
 
-const parentNode = item.parentNode
+// const parentNode = item.parentNode
 
-const previousSibling = parent.previousElementSibling
+// const previousSibling = parent.previousElementSibling
 
-console.log(parent)
-console.log(parentNode)
-console.log(previousSibling)
+// console.log(parent)
+// console.log(parentNode)
+// console.log(previousSibling)
+const characters = document.querySelector(".characters");
+const humans = characters.children[1];
+console.log(humans);
+const allHumans = document.querySelectorAll(".humans");
+logger(allHumans);
+
+const allHobits = document.querySelector(".hobbits").children;
+
+logger(allHobits);
+
+const enemies = characters.lastElementChild;
+
+const elves = enemies.previousElementSibling;
+
+logger(elves);
+
+logger(enemies);
+
+function logger(x) {
+  console.log(x);
+}
